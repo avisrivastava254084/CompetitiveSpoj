@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int n,m;
+		cin>>n>>m;
+		if(n==m)
+		{
+			if(m%2==0)
+			{
+				cout<<"L"<<endl;
+			}
+			if(m%2!=0)
+			{
+				cout<<"R"<<endl;
+			}
+		}
+		if(n>m)
+		{
+			if(n%2==0)
+			{
+				if(m%2==0)
+				{
+					cout<<"U"<<endl;
+				}
+				if(m%2!=0)
+				{
+					cout<<"D"<<endl;
+				}
+			}
+			if(n%2!=0)
+			{
+				if(m%2==0)
+				{
+					cout<<"U"<<endl;
+				}
+				if(m%2!=0)
+				{
+					cout<<"D"<<endl;
+				}
+			}
+		}
+		if(n<m)
+		{
+			if(n%2==0)
+			{
+				if(m%2==0)
+				{
+					cout<<"L"<<endl;
+				}
+				if(m%2!=0)
+				{
+					cout<<"L"<<endl;
+				}
+			}
+			if(n%2!=0)
+			{
+				if(m%2==0)
+				{
+					cout<<"R"<<endl;
+				}
+				if(m%2!=0)
+				{
+					cout<<"R"<<endl;
+				}
+			}
+		}
+	}
+return 0;
+}
+
